@@ -1,0 +1,96 @@
+.welcome-screen{
+    background: linear-gradient(to right top, $linear-dark, $linear-light);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__heading{
+        margin: 0 auto;
+    }
+
+    &__user-onboarding{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__onboarding-action{
+        max-width: 600px;
+        margin: 1rem 0 0 0;
+        width: 65%;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $light-text;
+        background-color: rgba($primary-dark-highlight, 0.7);
+
+        &--small-text{
+            font-size: 1.2rem;
+        }
+    }
+
+    &__default-form{
+        padding: 2rem 1rem 5rem 1rem;
+        background-color: rgba($primary-dark-highlight, 0.7);
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1000px;
+    }
+    &__small-logo{
+        height: 70px;
+        margin-bottom: 2rem;
+    }
+    &__default-label{
+        width: 100%;
+        max-width: 600px;
+        font-weight: bold;
+        color: $light-text;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        color: rgba(#FAFAFA, 0.95);
+    }
+
+    &__default-input{
+        width: 100%;
+        margin-top: 1rem;
+        height: 3rem;
+        background: none;
+        border: none;
+        border-radius: 0;
+        border-bottom: 3px solid $logo-primary;
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        color: $logo-primary;
+    }
+
+    &__default-submit{
+        max-width: 600px;
+        width: 100%;
+        margin-top: 1rem;
+        height: 3rem;
+        border: 3px solid $logo-primary;
+        border-radius: 0;
+        background: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: $light-text;
+    }
+
+    &__user-message{
+        color: $light-text;
+        border-bottom: 3px solid $logo-primary;
+        padding-bottom: 0.3rem;
+    }
+}

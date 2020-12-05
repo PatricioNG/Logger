@@ -1,0 +1,60 @@
+.error{
+
+    &__input-blank{
+    position: relative;
+        &::after{
+            position: absolute;
+            content: "Whoops, This can't be blank";
+            display: block;
+            bottom: -1rem;
+            right: 0;
+            font-size: 0.55rem;
+            color: $error-highlight;
+            animation: gentle-Jiggle 0.5s;
+        }
+
+        & > input{
+            border-bottom: 3px solid $error-highlight;
+        }
+    }
+
+    &__confirm-password-mismatch{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "Passwords do not match.";
+            display: block;
+            bottom: -1rem;
+            right: 0;
+            font-size: 0.55rem;
+            color: $error-highlight;
+        }
+
+        & > input{
+            border-bottom: 3px solid $error-highlight;
+        }
+    }
+
+    &__invalid-user-login{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "Hmm, that password and email combination didn't work.";
+            display: block;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 320px;
+            right: calc(50% - 160px);
+            bottom: 3rem;
+            font-size: 0.6rem;
+            color: $error-highlight;
+        }
+    }
+}
+
+ @keyframes gentle-Jiggle {
+      25% { transform: rotate(0deg); }
+      50% { transform: rotate(1.5deg); }
+      75% { transform: rotate(-1.5deg); }
+      100% { transform: rotate(0deg); }
+   }
